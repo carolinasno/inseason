@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="inseasonApp">
   <head>
     <meta charset="utf-8">
     <title>inseason</title>
     <link href='https://fonts.googleapis.com/css?family=Bentham' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYZk1bqQxipDPuSTKq_H32wLwhVfe2Ea0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js" charset="utf-8"></script>
-    <script src="/js/fruits_veggies/produce.js" charset="utf-8"></script>
+    <script src="/js/inseason.js" charset="utf-8"></script>
     <script src="/js/index.js" charset="utf-8"></script>
   </head>
   <body>
-
-    <h1>inseason</h1>
-
-    <a href="#">what's in season?</a>
-
+    <header>
+      <nav>
+        <a href="#/inseason"><h1>inseason</h1></a>
+      </nav>
+    </header>
+    <div class="whats-in-season" ng-view>
+      
+    </div>
   </body>
 </html>
