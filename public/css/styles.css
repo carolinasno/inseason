@@ -1,5 +1,45 @@
 body {
-  background-color: darkseagreen;
-  color: mistyrose;
-  font-family: 'Bentham', serif;
+  background-color: mistyrose;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+#produce-list {
+  height: 400px;
+  overflow: scroll;
+}
+
+.produce-list {
+  list-style-type: none;
+}
+
+#inseason-header {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+.inseason-header {
+  font-size: 90px;
+  margin: 20px;
+}
+
+#produce-name {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.month-container {
+  height: 140px;
+  overflow: scroll;
+}
+
+#map {
+  height: 400px;
+  width: 400px;
+}
+
+.market-display {
+  height: 400px;
+  overflow: scroll;
+  float: right;
 }

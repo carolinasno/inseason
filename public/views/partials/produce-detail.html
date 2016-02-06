@@ -1,6 +1,22 @@
-<div class="produce-detail" ng-controller="produceController">
-  <h3>{{produce.name}}</h3>
-  <h4>{{produce.type}}</h4>
-  <h5>{{produce.seasonAvailable}}</h5>
-  <h5>{{produce.monthAvailable}}</h5>
-</div>
+<div class="produce-detail" ng-controller="produceDetailController">
+  <h2>{{produce.name}}</h2>
+  <h3>type</h3>
+  <h3>{{produce.type}}</h3>
+  <h4>season available</h4>
+  <h4>{{produce.seasonAvailable}}</h4>
+  <h4>months available</h4>
+  <div class="month-container">
+    <h4>{{produce.monthsAvailable[0]}}</h4>
+    <h4>{{produce.monthsAvailable[1]}}</h4>
+    <h4>{{produce.monthsAvailable[2]}}</h4>
+    <h4>{{produce.monthsAvailable[3]}}</h4>
+    <h4>{{produce.monthsAvailable[4]}}</h4>
+    <h4>{{produce.monthsAvailable[5]}}</h4>
+    <h4>{{produce.monthsAvailable[6]}}</h4>
+    <h4>{{produce.monthsAvailable[7]}}</h4>
+    <h4>{{produce.monthsAvailable[8]}}</h4>
+    <h4>{{produce.monthsAvailable[9]}}</h4>
+    <h4>{{produce.monthsAvailable[10]}}</h4>
+    <h4>{{produce.monthsAvailable[11]}}</h4>
+  </div>
+</div

@@ -1,0 +1,23 @@
+<section ng-controller="mapController">
+
+  <form ng-submit="marketSearch()">
+    <input type="text" ng-model="citySearch" placeholder="enter your city">
+    <input type="submit">
+  </form>
+
+  <div class="market-display">
+    <ul>
+      <li ng-repeat="market in markets">
+        <h3>{{market.market_name}}</h3>
+        <h4>{{market.address_line_1}}</h4>
+        <h4>{{market.city}}</h4>
+        <h5>{{market.operation_season}}</h5>
+        <h5>{{market.operation_hours}}</h5>
+        <h5>{{market.phone}}</h5>
+      </li>
+    </ul>
+  </div>
+
+  <div id="map"></div>
+
+</section>

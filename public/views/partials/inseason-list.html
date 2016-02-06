@@ -1,5 +1,35 @@
-<div id="produce-list" ng-controller="inseasonController">
-  <li ng-repeat="produce in inseason">
-    <a ng-href="#/inseason/{{$index}}">{{produce.name}}</a>
+<div id="produce-list" ng-controller="inseasonListController">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
   </li>
 </div>
+<!--
+<div id="year-round-produce-list" ng-controller="inseasonListController">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
+  </li>
+</div>
+
+<div id="winter-produce-list">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
+  </li>
+</div>
+
+<div id="spring-produce-list">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
+  </li>
+</div>
+
+<div id="summer-produce-list">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
+  </li>
+</div>
+
+<div id="fall-produce-list">
+  <li ng-repeat="produce in inseason | unique: 'name'" class="produce-list">
+    <a ng-href="#/inseason/{{$index}}" id="produce-name"><h4 class="produce-name">{{produce.name}}</h4></a>
+  </li>
+</div> -->
