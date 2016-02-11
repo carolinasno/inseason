@@ -1,6 +1,6 @@
-var map = angular.module('mapsController', []);
+var map = angular.module('marketsController', []);
 
-map.controller('mapController', ['$scope', 'farmersMarketApi', function($scope, farmersMarketApi){
+map.controller('marketController', ['$scope', 'farmersMarketApi', function($scope, farmersMarketApi){
 
   $scope.markets = [];
 
@@ -28,7 +28,13 @@ map.controller('mapController', ['$scope', 'farmersMarketApi', function($scope, 
       center: this.currentLatLng,
       zoom: this.zoom,
       mapTypeId: google.maps.MapTypeId.ROADMAP
-    })
+    });
+
+    this.marker = new google.maps.Marker({
+      position: this.currentLatLng,
+      map: this.map,
+      animation: google.maps.Animation.DROP
+    });
   }
 
   myMap.reCenterMap = function(){

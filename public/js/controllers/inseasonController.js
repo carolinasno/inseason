@@ -1,14 +1,28 @@
-var ctrl = angular.module('inseasonController', []);
+var ctrl = angular.module('produceController', []);
 
-ctrl.controller('mainController', ['$scope', function($scope){
+ctrl.controller('produceListController', ['$scope', 'produceApi', function($scope, produceApi){
+  $scope.produce = [];
 
+  $scope.allProduce = function(){
+    produceApi.allProduce().then(function(response){
+      var data = response.data;
+      $scope.produce = data;
+      return data
+    });
+  };
+
+  $scope.allProduce();
 }]);
 
-ctrl.controller('inseasonListController', ['$scope', function($scope){
-  $scope.inseason = inseason;
-}]);
+ctrl.controller('produceDetailController', ['$scope', '$routeParams', 'produceApi', function($scope, $routeParams, produceApi){
+  $scope.eachproduce = [];
 
-ctrl.controller('produceDetailController', ['$scope', '$routeParams', function($scope, $routeParams){
-  $scope.inseason = inseason;
-  $scope.produce = $scope.inseason[$routeParams.id];
+  $scope.allProduce = function(){
+    produceApi.allProduce().then(function(response){
+      $scope.produce = response.data;
+      $scope.eachproduce = $scope.produce[$routeParams.id];
+    })
+  }
+
+  $scope.allProduce();
 }]);

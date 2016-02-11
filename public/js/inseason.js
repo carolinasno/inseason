@@ -18,7 +18,7 @@ var inseason = [
     "monthsAvailable": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   },
   {
-    "name": "driedApricots",
+    "name": "dried apricots",
     "type": "fruit",
     "seasonAvailable": "year-round",
     "monthsAvailable": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]

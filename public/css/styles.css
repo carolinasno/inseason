@@ -1,7 +1,21 @@
 body {
-  background-color: mistyrose;
-  font-family: 'Poiret One', cursive;
+  padding: 50px;
+  background-color: linen;
+  font-family: 'benthamregular';
   text-align: center;
+  color: indianred;
+}
+
+#inseason-header {
+  text-decoration: none;
+}
+
+.inseason-header {
+  font-family: 'langdonregular';
+  font-weight: 100;
+  font-size: 90px;
+  margin: 20px;
+  color: dimgrey;
 }
 
 #produce-list {
@@ -13,19 +27,42 @@ body {
   list-style-type: none;
 }
 
-#inseason-header {
-  text-decoration: none;
-  color: darkolivegreen;
-}
-
-.inseason-header {
-  font-size: 90px;
-  margin: 20px;
-}
-
 #produce-name {
   text-decoration: none;
-  color: goldenrod;
+}
+
+.produce-name {
+  font-size: 20px;
+  font-weight: 100;
+  color: indianred;
+  margin: 0;
+  line-height: 20px;
+}
+
+#market-name {
+  font-size: 20px;
+  color: indianred;
+  font-weight: bold;
+  margin: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+#market-address {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 24px;
+}
+
+#market-season,
+#market-hours,
+#market-phone {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 18px;
+  padding: 5px;
 }
 
 .month-container {
@@ -42,4 +79,34 @@ body {
   height: 400px;
   overflow: scroll;
   float: right;
+}
+
+#inseason-link,
+#farmersmarket-link {
+  text-decoration: none;
+  color: dimgrey;
+}
+
+#produce-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#produce-type,
+#season-available,
+#months-available {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 22px;
+  margin: 0;
+  padding: 5px;
+}
+
+.month {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 22px;
+  margin: 0;
 }
