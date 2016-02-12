@@ -1,32 +1,33 @@
-<!-- <div id="produce-list" ng-controller="produceListController">
+<div id="produce-list" ng-controller="produceListController">
   <li ng-repeat="pro in produce" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
-</div> -->
-<div class="season-button" ng-click="showYearRound = ! showYearRound">year round</div>
+</div>
+
+<!-- <div class="season-button" ng-click="showYearRound = ! showYearRound">year round</div>
 <div class="season-button" ng-click="showWinter = ! showWinter">winter</div>
 <div class="season-button" ng-click="showSpring = ! showSpring">spring</div>
 <div class="season-button" ng-click="showSummer = ! showSummer">summer</div>
 <div class="season-button" ng-click="showFall = ! showFall">fall</div>
 
 <div id="produce-list" ng-controller="produceListController">
-  <li ng-show="showYearRound" ng-repeat="pro in produce | filterBy: ['seasonAvailable']: 'year-round'" class="produce-list">
+  <li ng-show="showYearRound" ng-repeat="pro in produce | filter: 'year-round'" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
 
-  <li ng-show="showWinter" ng-repeat="pro in produce | filterBy: ['seasonAvailable']: 'winter'" class="produce-list">
+  <li ng-show="showWinter" ng-repeat="pro in produce | filter: 'winter'" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
 
-  <li ng-show="showSpring" ng-repeat="pro in produce | filterBy: ['seasonAvailable']: 'spring'" class="produce-list">
+  <li ng-show="showSpring" ng-repeat="pro in produce | filter: 'spring'" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
 
-  <li ng-show="showSummer" ng-repeat="pro in produce | filterBy: ['seasonAvailable']: 'summer'" class="produce-list">
+  <li ng-show="showSummer" ng-repeat="pro in produce | filter: 'summer'" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
 
-  <li ng-show="showFall" ng-repeat="pro in produce | filterBy: ['seasonAvailable']: 'fall'" class="produce-list">
+  <li ng-show="showFall" ng-repeat="pro in produce | filter: 'fall'" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
   </li>
-</div>
+</div> -->
