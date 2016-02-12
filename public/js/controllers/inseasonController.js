@@ -1,6 +1,6 @@
 var ctrl = angular.module('produceController', []);
 
-ctrl.controller('produceListController', ['$scope', 'produceApi', function($scope, produceApi){
+ctrl.controller('produceListController', ['$scope', '$routeParams', 'produceApi', function($scope, $routeParams, produceApi){
   $scope.produce = [];
 
   $scope.allProduce = function(){
@@ -12,6 +12,7 @@ ctrl.controller('produceListController', ['$scope', 'produceApi', function($scop
   };
 
   $scope.allProduce();
+
 }]);
 
 ctrl.controller('produceDetailController', ['$scope', '$routeParams', 'produceApi', function($scope, $routeParams, produceApi){
