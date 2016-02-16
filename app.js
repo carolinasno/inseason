@@ -49,7 +49,7 @@ app.use(function(err, req, res, next){
   }));
 });
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function(){
   console.log('making better eating habits at ' + port);
 });
