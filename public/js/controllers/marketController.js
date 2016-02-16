@@ -4,7 +4,9 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
 
   $scope.markets = [];
 
-  $scope.markers = [];
+  var markers = [];
+
+  var infowindows = [];
 
   $scope.getAll = function(){
     farmersMarketApi.getAll().then(function(response){
@@ -55,23 +57,21 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
 
       var farmersMarketMarkerLL = new google.maps.LatLng(marketLocation.lat, marketLocation.lng);
 
-      var myInfoWindow = new google.maps.InfoWindow({
+      infowindows[i] = new google.maps.InfoWindow({
         content: marketInfo
       });
 
-      var marker = new google.maps.Marker({
+      markers[i] = new google.maps.Marker({
         position: farmersMarketMarkerLL,
         map: myMap.getMap(),
         animation: google.maps.Animation.DROP,
-        infowindow: myInfoWindow
       });
 
-      $scope.markers.push(marker);
-
-      marker.addListener('click', function(){
-        console.log('hey girl');
-        myInfoWindow.open(myMap.getMap(), marker);
-      });
+      google.maps.event.addListener(markers[i], 'click', (function(marker, i){
+        return function(){
+          infowindows[i].open(myMap.getMap(), markers[i]);
+        };
+      })(markers[i], i));
     }
   };
 
@@ -79,7 +79,7 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
 
   myMap.init = function(){
 
-    this.zoom = 14;
+    this.zoom = 12;
     this.mapEl = document.querySelector('#map');
     this.currentLatLng = new google.maps.LatLng(40.73712, -73.99029);
 
@@ -88,12 +88,6 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
       zoom: this.zoom,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
-    // this.marker = new google.maps.Marker({
-    //   position: this.currentLatLng,
-    //   map: this.map,
-    //   animation: google.maps.Animation.DROP
-    // });
   }
 
   myMap.getMap = function(){

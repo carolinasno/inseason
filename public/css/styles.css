@@ -141,7 +141,12 @@ body {
 }
 
 .city-search-form {
-  padding: 20px;
+  padding: 30px;
+  height: 38px;
+}
+
+form {
+  margin-bottom: 0;
 }
 
 #market-name {
@@ -193,6 +198,11 @@ body {
   line-height: 22px;
   margin: 0;
   padding: 5px;
+}
+
+#season-avail {
+  text-transform: capitalize;
+  margin: 0;
 }
 
 .month {

@@ -19,8 +19,20 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
   });
 
+  inseasonLink.click(function(){
+    $('html, body').animate({
+      scrollTop: $('.inseason-view').offset().top},
+      'slow');
+  });
+
   farmersMarketLink.css({
     'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
+  });
+
+  farmersMarketLink.click(function(){
+    $('html, body').animate({
+      scrollTop: $('.inseason-view').offset().top},
+      'slow');
   });
 
 });
