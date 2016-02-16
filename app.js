@@ -7,6 +7,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bcrypt = require('bcrypt-nodejs'),
     passport = require('passport'),
+    http = require('http');
     localStrategy = require('passport-local').Strategy;
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/inseason');
@@ -15,7 +16,9 @@ var Produce = require('./models/produce.js');
 
 var app = express();
 
-var routes = require('./routes/index.js');
+var routes = require('./routes/index.js')(app);
+
+var server = http.createServer(app);
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
