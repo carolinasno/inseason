@@ -1,28 +1,81 @@
 body {
-  padding: 50px;
   background-color: linen;
-  font-family: 'benthamregular';
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  color: dimgrey;
   text-align: center;
-  color: indianred;
 }
 
-#inseason-header {
+.inseason-view {
+  background-color: snow;
+  height: 2400px;
+}
+
+.inseason-header{
+  position: relative;
+  height: 800px;
+  background-color: dimgrey;
+  overflow: hidden;
+}
+
+#inseason-logo {
   text-decoration: none;
 }
 
-.inseason-header {
-  font-family: 'langdonregular';
-  font-weight: 100;
-  font-size: 90px;
-  margin: 20px;
+.inseason-logo {
+  height: 200px;
+  width: 100%;
+  background-color: transparent;
+  background-position: center;
+  position: absolute;
+  top: 32%;
+  margin-top: -50px;
+  font-family: 'rissatypefaceregular';
+  font-size: 300px;
+  color: snow;
+}
+
+.whats-in-season,
+.farmers-markets {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.farmers-markets {
+  background-image: url(https://i.imgur.com/mWmgcnd.jpg);
+  background-size: cover;
+  background-position: middle center;
+  background-attachment: fixed;
+}
+
+#inseason-link {
+  text-decoration: none;
   color: dimgrey;
+  font-family: 'rissatypefaceregular';
+  font-size: 150px;
+  position: absolute;
+  margin-top: 0px;
+  top: -250px;
+  left: 10%;
+}
+
+#farmersmarket-link {
+  text-decoration: none;
+  color: snow;
+  font-family: 'rissatypefaceregular';
+  font-size: 150px;
+  position: absolute;
+  margin-top: 0px;
+  top: -700px;
+  left: 10%;
 }
 
 .button {
-  font-family: 'benthamregular';
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   font-weight: 300;
-
 }
 
 #produce-list {
@@ -41,18 +94,18 @@ body {
 .produce-name {
   font-size: 20px;
   font-weight: 100;
-  color: indianred;
+  color: dimgrey;
   margin: 0;
   line-height: 20px;
 }
 
 #market-name {
   font-size: 20px;
-  color: indianred;
+  color: dimgrey;
   font-weight: bold;
   margin: 0;
   line-height: 20px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 #market-address {
@@ -88,17 +141,11 @@ body {
   float: right;
 }
 
-#inseason-link,
-#farmersmarket-link {
-  text-decoration: none;
-  color: dimgrey;
-}
-
 #produce-name {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 #produce-type,
@@ -124,7 +171,7 @@ body {
   width: 100px;
   font-size: 14px;
   color: dimgrey;
-  text-transform: uppercase;
+  text-transform: lowercase;
   border: 1px solid #bbb;
   border-radius: 4px;
   display: inline-block;

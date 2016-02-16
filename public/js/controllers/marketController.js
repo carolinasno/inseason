@@ -13,16 +13,31 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
   $scope.marketSearch = function(){
     farmersMarketApi.search($scope.citySearch).then(function(response){
       $scope.markets = response.data;
+      $scope.marketLatLng();
     });
   }
 
+  var farmersMarketMarker;
+
+  $scope.marketLatLng = function(){
+    for (var i = 0; i < $scope.markets.length; i++) {
+      var marketName = $scope.markets[i].market_name;
+      var marketLocation = {
+        lat: $scope.markets[i].latitude,
+        lng: $scope.markets[i].longitude
+      }
+      console.log(marketName, marketLocation);
+    }
+    farmersMarketMarker = new google.maps.LatLng(marketLocation[0], marketLocation[1]);
+  };
 
   var myMap = {};
 
   myMap.init = function(){
+
     this.zoom = 14;
     this.mapEl = document.querySelector('#map');
-    this.currentLatLng = new google.maps.LatLng(40.737098, 	-73.990352);
+    this.currentLatLng = new google.maps.LatLng(40.73712, -73.99029);
 
     this.map = new google.maps.Map(this.mapEl, {
       center: this.currentLatLng,
@@ -35,11 +50,6 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
       map: this.map,
       animation: google.maps.Animation.DROP
     });
-  }
-
-  myMap.reCenterMap = function(){
-    myMap.map.setZoom(myMap.zoom);
-    myMap.map.setCenter(myMap.currentLatLng);
   }
 
   myMap.init();
