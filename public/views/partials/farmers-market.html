@@ -1,7 +1,7 @@
-<section ng-controller="marketController" class="container">
+<section ng-controller="marketController">
 
   <form ng-submit="marketSearch()">
-    <div class="row">
+    <div class="row city-search-form">
       <div class="ten columns">
         <input class="city-search u-full-width" type="text" ng-model="citySearch" placeholder="enter your city">
       </div>
@@ -11,11 +11,11 @@
     </div>
   </form>
 
-  <div class="row">
-    <div class="six columns">
+  <!-- <div class="row"> -->
+    <!-- <div class="six columns"> -->
       <div id="map"></div>
-    </div>
-    <div class="six columns">
+    <!-- </div> -->
+    <!-- <div class="six columns">
       <div class="market-display">
         <ul>
           <li ng-repeat="market in markets">
@@ -39,7 +39,7 @@
           </li>
         </ul>
       </div>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
 
 </section>

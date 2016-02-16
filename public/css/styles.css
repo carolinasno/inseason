@@ -1,6 +1,6 @@
 body {
-  background-color: linen;
-  font-family: 'Muli', sans-serif;
+  background-color: dimgrey;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   color: dimgrey;
   text-align: center;
@@ -35,12 +35,28 @@ body {
   color: snow;
 }
 
+#inseason-motto {
+  position: relative;
+  color: snow;
+  top: 65%;
+  margin-top: -50px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
 .whats-in-season,
 .farmers-markets {
   height: 800px;
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.whats-in-season {
+  background-image: url(https://i.imgur.com/pC1zABX.jpg);
+  background-size: cover;
+  background-position: middle center;
+  background-attachment: fixed;
 }
 
 .farmers-markets {
@@ -61,6 +77,10 @@ body {
   left: 10%;
 }
 
+#inseason-link:hover {
+  color: indianred;
+}
+
 #farmersmarket-link {
   text-decoration: none;
   color: snow;
@@ -72,14 +92,25 @@ body {
   left: 10%;
 }
 
+#farmersmarket-link:hover {
+  color: indianred;
+}
+
 .button {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
 
+.produce-search {
+  padding: 30px;
+}
+
 #produce-list {
-  height: 400px;
+  height: 600px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
   overflow: scroll;
 }
 
@@ -88,28 +119,41 @@ body {
 }
 
 #produce-name {
+  font-family: 'rissatypefaceregular';
+  font-size: 90px;
+  color: indianred;
+  margin: 0;
+  padding-top: 30px;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 .produce-name {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 100;
   color: dimgrey;
   margin: 0;
   line-height: 20px;
 }
 
-#market-name {
+#eachproduce-type {
   font-size: 20px;
+}
+
+.city-search-form {
+  padding: 20px;
+}
+
+#market-name {
+  font-size: 16px;
   color: dimgrey;
   font-weight: bold;
   margin: 0;
   line-height: 20px;
-  text-transform: lowercase;
 }
 
 #market-address {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
   margin: 0;
   line-height: 24px;
@@ -118,7 +162,7 @@ body {
 #market-season,
 #market-hours,
 #market-phone {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 100;
   margin: 0;
   line-height: 18px;
@@ -131,21 +175,14 @@ body {
 }
 
 #map {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 100%;
 }
 
 .market-display {
   height: 400px;
   overflow: scroll;
   float: right;
-}
-
-#produce-name {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  text-transform: lowercase;
 }
 
 #produce-type,

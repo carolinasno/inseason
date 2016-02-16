@@ -1,3 +1,7 @@
+<div class="produce-search">
+  <input type="text" name="name" placeholder="search produce">
+</div>
+
 <div id="produce-list" ng-controller="produceListController">
   <li ng-repeat="pro in produce" class="produce-list">
     <a ng-href="#/producelist/{{$index}}" id="produce-name"><h4 class="produce-name">{{pro.name}}</h4></a>
