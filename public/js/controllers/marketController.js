@@ -72,6 +72,7 @@ map.controller('marketController', ['$scope', 'farmersMarketApi', function($scop
           infowindows[i].open(myMap.getMap(), markers[i]);
         };
       })(markers[i], i));
+
     }
   };
 

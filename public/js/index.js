@@ -25,6 +25,9 @@ app.config(['$routeProvider', function($routeProvider){
   .when('/farmersmarkets', {
     templateUrl: '/views/partials/farmers-market.html'
   })
+  .when('/about', {
+    templateUrl: '/views/partials/about.html'
+  })
   .otherwise({
     redirectTo: '/'
   });

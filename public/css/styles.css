@@ -11,11 +11,17 @@ body {
   height: 2400px;
 }
 
-.inseason-header{
+.inseason-header {
   position: relative;
   height: 800px;
   background-color: dimgrey;
   overflow: hidden;
+}
+
+.about-header {
+  font-family: 'rissatypefaceregular';
+  font-size: 90px;
+  padding: 50px;
 }
 
 #inseason-logo {
@@ -45,7 +51,8 @@ body {
 }
 
 .whats-in-season,
-.farmers-markets {
+.farmers-markets,
+.about-inseason {
   height: 800px;
   width: 100%;
   position: relative;
@@ -61,6 +68,13 @@ body {
 
 .farmers-markets {
   background-image: url(https://i.imgur.com/mWmgcnd.jpg);
+  background-size: cover;
+  background-position: middle center;
+  background-attachment: fixed;
+}
+
+.about-inseason {
+  background-image: url(https://i.imgur.com/TlVumon.jpg);
   background-size: cover;
   background-position: middle center;
   background-attachment: fixed;
@@ -93,7 +107,22 @@ body {
 }
 
 #farmersmarket-link:hover {
+  color: dimgrey;
+}
+
+#about-inseason{
+  text-decoration: none;
   color: indianred;
+  font-family: 'rissatypefaceregular';
+  font-size: 150px;
+  position: absolute;
+  margin-top: 0px;
+  top: -1180px;
+  left: 10%;
+}
+
+#about-inseason:hover {
+  color: snow;
 }
 
 .button {
@@ -102,8 +131,11 @@ body {
   font-weight: 300;
 }
 
-.produce-search {
-  padding: 30px;
+#produce-header {
+  font-family: 'rissatypefaceregular';
+  font-size: 90px;
+  padding: 20px 50px;
+  height: 100px;
 }
 
 #produce-list {
@@ -129,11 +161,12 @@ body {
 }
 
 .produce-name {
-  font-size: 40px;
+  font-family: 'Work Sans';
+  font-size: 20px;
   font-weight: 100;
-  color: dimgrey;
+  color: indianred;
   margin: 0;
-  line-height: 20px;
+  line-height: 14px;
 }
 
 #eachproduce-type {
@@ -176,6 +209,8 @@ form {
 
 .month-container {
   height: 140px;
+  width: 300px;
+  margin: 0 auto;
   overflow: scroll;
 }
 
