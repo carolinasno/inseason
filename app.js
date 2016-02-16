@@ -9,7 +9,7 @@ var express = require('express'),
     passport = require('passport'),
     localStrategy = require('passport-local').Strategy;
 
-mongoose.connect('mongodb://localhost/inseason');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/inseason');
 
 var Produce = require('./models/produce.js');
 
