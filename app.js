@@ -16,7 +16,7 @@ var Produce = require('./models/produce.js');
 
 var app = express();
 
-var routes = require('./routes/index.js')(app);
+var routes = require('./routes/index.js');
 
 var server = http.createServer(app);
 
