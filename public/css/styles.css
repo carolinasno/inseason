@@ -1,15 +1,10 @@
-/*@media only screen and (max-width: 800px) {
-  body {
-    background-color: yellow;
-  }
-}*/
-
 body {
   background-color: dimgrey;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   color: dimgrey;
   text-align: center;
+  width: 100%;
 }
 
 .inseason-view {
