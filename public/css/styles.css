@@ -23,6 +23,7 @@ body {
   font-family: 'rissatypefaceregular';
   font-size: 90px;
   padding: 50px;
+  margin: 0;
 }
 
 #inseason-logo {
@@ -259,4 +260,9 @@ form {
   border-radius: 4px;
   display: inline-block;
   overflow: auto;
+}
+
+.about-description {
+  width: 450px;
+  margin: 0 auto;
 }

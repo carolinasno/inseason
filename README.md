@@ -8,12 +8,47 @@ Make better eating habits with inseason.
 
 ### Development Approach
 
+The ideation for inseason began with one goal in mind: to help people make better choices with the food they eat. The first step was to know what information inseason would include and to determine the resources needed to provide that information. A JSON file with a list of produce and its details was created and imported into a Mongo database
+
+---
+
 ### User Stories
+
+![User stories](/public/images/readme/whats-in-season.png)
+![User stories](/public/images/readme/produce-list.png)
+
+* As a user, I want to be able to see a list of fruits and vegetables, be able to click on an individual fruit or vegetable, and see its description. The description should include information of what season and months it is available.
+
+![User stories](/public/images/readme/farmers-market.png)
+![User stories](/public/images/readme/farmers-markets-map.png)
+
+* As a user, I want to be able to see what farmers markets are in my city, be able to click on an individual farmers market by its marker and see information about that farmers market. The description should include the address, hours, season, and phone number.
+
+![User stories](/public/images/readme/about.png)
+![User stories](/public/images/readme/about-description.png)
+
+* As a user, I want to learn more about inseason.
+
+---
 
 ### URL
 
+https://stayinseason.herokuapp.com
+
+---
+
 ### Technologies
 
-### Unsolved Problems and Challenges
+* NodeJS
+* Express
+* MongoDB
+* JavaScript/jQuery
+* Angular
+* Skeleton
+* New York State's Farmers Markets API
+
+---
 
 ### Version 2
+
+inseason 2.0 would include a navigation bar, user accounts and profiles, a section for recipes, and there would be more fruits and vegetables added onto the produce list. Users would be able to add their favorite produce, famers markets, and recipes to their profile, search for recipes, as well as create their own recipes that can be shared amongst other users.
