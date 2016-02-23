@@ -44,10 +44,12 @@ https://stayinseason.herokuapp.com
 * NodeJS
 * Express
 * MongoDB
-* JavaScript/jQuery
+* JavaScript
+* jQuery
 * Angular
 * Skeleton
 * New York State's Farmers Markets API
+* Google Maps API
 
 ---
 
