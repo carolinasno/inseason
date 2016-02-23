@@ -8,7 +8,9 @@ Make better eating habits with inseason.
 
 ### Development Approach
 
-The ideation for inseason began with one goal in mind: to help people make better choices with the food they eat. The first step was to know what information inseason would include and to determine the resources needed to provide that information. A JSON file with a list of produce and its details was created and imported into a Mongo database
+The ideation for inseason began with one goal in mind: to help people make better choices with the food they eat. The first step was to determine what information inseason would provide and how the user would use inseason in their everyday lives.
+
+Because there aren't any APIs or databases that provide the information inseason needs, a JSON file with a list of produce and its details was created and imported into a Mongo database. For the Farmers Markets, the New York State Farmers Markets API was used to pull data and information on each farmers market. This includes the latitude, longitude, farmers markets name, location, hours of operation, season available, and contact number.
 
 ---
 
